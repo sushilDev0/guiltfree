@@ -1,4 +1,3 @@
-
 function maxSubArraySum(nums) {
     if (!nums || nums.length === 0) return 0;
     let current = nums[0];

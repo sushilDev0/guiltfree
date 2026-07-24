@@ -17,6 +17,4 @@ function twoSumII(numbers, target){
     }
   }
 }
-
-
 console.log(twoSumII([2, 7, 11, 15], 9))
