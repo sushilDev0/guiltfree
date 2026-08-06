@@ -30,3 +30,30 @@ var topKFrequent = function (nums, k) {
 };
 
 console.log(topKFrequent([1, 1, 2, 2, 3], 2))
+
+var topKFrequent = function (nums, k) {
+
+
+ const map = {};
+  for (const num of nums) {
+    map[num] = (map[num] || 0) + 1;
+  }
+
+  // step 2: bucket by frequency
+  const bucket = Array.from({length: nums.length + 1}, () => []);
+  for (const [num, freq] of Object.entries(map)) {
+    bucket[freq].push(Number(num));
+  }
+
+  // step 3: read from right, collect top k
+  const result = [];
+  for (let i = bucket.length - 1; i >= 0 && result.length < k; i--) {
+    result.push(...bucket[i]);
+  }
+
+  return result;
+
+
+}
+
+console.log(topKFrequent([1, 1, 2,9,9,9,9,5,5,3,2, 2, 3], 2))
