@@ -11,7 +11,7 @@ ransomNote = "aa", magazine = "aab"
 // output: true
 
 */
-
+ 
 var ransomNote = function (note,  magazine){
    
     if (note.length > magazine.length) return false;

@@ -10,8 +10,6 @@ s = "rat", t = "car"
 An anagram = same letters, same count, different order.
 
 */
-
-
 var validAnagram = function (s, t) {
 
     if (s.length !== t.length) return false;

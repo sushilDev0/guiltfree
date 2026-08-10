@@ -8,10 +8,6 @@ function maxSubArraySum(nums) {
         sum = Math.max(sum, current);
 
     }
-
     return sum
 }
-
-
-
 console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4], 6))

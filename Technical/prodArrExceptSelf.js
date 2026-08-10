@@ -19,7 +19,6 @@ function prodAExceptSelf(nums) {
     console.log(leftProducts)
 
     let rightProducts = new Array(nums.length).fill(1);
-
     for (let i = nums.length - 2; i >= 0; i--) {
 
         rightProducts[i] = rightProducts[i + 1] * nums[i + 1]
