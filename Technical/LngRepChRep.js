@@ -18,7 +18,7 @@ s = "AABABBA", k = 1
 */
 
 
-var LngRepChRep = function(s,k)_{
+var LngRepChRep = function(s, k) {
    
     if(!s || s.length === 0) return 0;
 
