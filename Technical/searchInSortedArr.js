@@ -1,4 +1,5 @@
 /*
+
 LC 33 — Search in Rotated Sorted Array
 
 nums = [4,5,6,7,0,1,2], target = 0
@@ -9,6 +10,7 @@ nums = [4,5,6,7,0,1,2], target = 3
 
 nums = [1], target = 0
 // output: -1
+
 */
 
 
@@ -45,4 +47,4 @@ var searchInSortedArr = function(nums, target){
 
 console.log(searchInSortedArr([4,5,6,7,0,1,2], 0)); // 4
 console.log(searchInSortedArr([4,5,6,7,0,1,2], 3)); // -1
-console.log(searchInSortedArr([1], 0));   
+console.log(searchInSortedArr([1], 0));
